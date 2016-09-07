@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<Module>
+	<ModulePrefs title="compliance.xml" /> 
+	<Content type="html">
+		<![CDATA[	
+			<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+			<link href="https://rawgit.com/marcobbva/stmo/master/lib/bootstrap.css" rel="stylesheet">
+			<link href="https://rawgit.com/marcobbva/stmo/master/lib/jquery.editable-select.css" rel="stylesheet">
+			<link href="https://rawgit.com/marcobbva/stmo/master/lib/fixedheadertable.css" rel="stylesheet">
+			<link href="https://rawgit.com/marcobbva/stmo/master/lib/colorbox.css" rel="stylesheet">
+			<link href="https://rawgit.com/marcobbva/stmo/master/lib/common_styles.css" rel="stylesheet">
+			<link href="https://rawgit.com/marcobbva/stmo/master/lib/estilo_gral.css" rel="stylesheet">
+			<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+			<script src="https://rawgit.com/marcobbva/stmo/master/lib/jquery-1.10.2.min.js"></script>
+			<script src="https://rawgit.com/marcobbva/stmo/master/lib/jquery.editable-select.js"></script>
+			<script src="https://rawgit.com/marcobbva/stmo/master/lib/jquery.fixedheadertable.js"></script>
+			<script src="https://rawgit.com/marcobbva/stmo/master/lib/jquery.colorbox.js"></script>
+			<script src="https://rawgit.com/marcobbva/stmo/master/src/compliance.js"></script>
+			
+			<div id="dashboard">
+				
+				<table width="87%" align="center">
+					<tr>
+						
+						<td height="50px" style="text-align:left;" class="filtros_style">N&uacutemero Regla:</td>
+						<td><input type="text" class="input-style" id="sRegla"></td>
+						<td></td>
+						<td style="text-align:left; margin:10px 0px 0px 0px;" class="filtros_style">Tipo:</td>
+						<td id="cTipo"><input type="hidden" id="hTipo"><select id="sTipo" style="display: none;"></select></td>
+						<td></td>
+						<td></td>
+						<td style="text-align:right;padding-right: 5px;">
+							<a href="#" onclick="limpiar();"><img src="https://raw.githubusercontent.com/marcobbva/stmo/master/img/limpiar.png" height="40" width="40" title="Limpiar Filtros"></a>
+						</td>
+					</tr>
+					<tr>
+						<td width="13%" height="50px" style="text-align:left;" class="filtros_style">Portafolio:</td>
+						<td width="23%"><input type="text" class="input-style" id="sPortafolio"></td>
+						<td width="2%"></td>
+						<td width="10%" style="text-align:left; margin:10px 0px 0px 0px;" class="filtros_style">Negocio:</td>
+						<td width="21%" id="cNegocio"><input type="hidden" id="hNegocio"><select id="sNegocio" style="display: none;"></select></td>
+						<td width="2%"></td>
+						<td width="7%" style="text-align:left;" class="filtros_style">Propietario:</td>
+						<td width="21%" id="cPropietario"><input type="hidden" id="hPropietario"><select id="sPropietario" style="display: none;"></select></td>
+						
+					</tr>
+				</table>
+				</br>
+				<div class="divtabla-style">
+					<table class="tabla-style" id="tabla-reglas" cellpadding="0" cellspacing="0">
+						<thead>
+							<tr>
+								<th width="150px" class="hcenter-row">N&uacutemero Regla</th>
+								<th width="420px" class="hcenter-row">Regla</th>
+								<th width="140px" class="hcenter-row">Tipo</th>
+								<th width="140px" class="hcenter-row">Negocio</th>
+								<th width="140px" class="hcenter-row">Propietario</th>
+								
+							</tr>
+						</thead>
+						<tbody>
+							
+						
+						</tbody>
+					</table>
+				</div>
+				<div style="display:none">
+					<div id="detalle_regla_content" style="padding:10px; background:#fff;">
+						<table width="90%" align="center">
+							
+							<tr>
+								<td width="2%" height="50px" style="text-align:left;" class="filtros_style" id="sEstatus">&#9899;</td>
+								<td width="12%" height="50px" style="text-align:left;" class="filtros_style">N&uacutemero Regla:</td>
+								<td width="8%"><input type="text" class="input-style" id="sNumeroRegla"></td>
+								<td width="5%"></td>
+								<td width="8%" height="50px" style="text-align:left;" class="filtros_style">Regla:</td>
+								<td width="65%"><input type="text" class="input-style" id="sReglaNombre"></td>
+								
+							</tr>
+
+						</table>
+						<div style="height: 30px;"></div>
+						<div class="divtablacoment-width">
+							<table class="tablacom-style" cellpadding="0" cellspacing="0">
+								<thead>
+									<tr>
+										<th width="1000px" class="hcenter-row">Portafolios</th>
+									</tr>
+								</thead>
+							</table>
+						</div>
+						<div class="divtablacoment-width divtablacoment-style">
+							<table class="tablacom-style" id="tabla-portafolios" cellpadding="0" cellspacing="0">
+								<tbody>
+									
+								</tbody>
+							</table>
+						</div>
+						<div style="height: 30px;"></div>
+						<div class="divtablacoment-width">
+							<table class="tablacom-style" cellpadding="0" cellspacing="0">
+								<thead>
+									<tr>
+										<th width="1000px" class="hcenter-row">Descripci&oacuten</th>
+									</tr>
+								</thead>
+							</table>
+						</div>
+						<div class="divtablacoment-width divtablacoment-style">
+							<table class="tablacom-style" id="tabla-descripcion" cellpadding="0" cellspacing="0">
+								<tbody>
+									
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		]]>
+	</Content> 
+</Module>
