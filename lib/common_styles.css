@@ -1,0 +1,100 @@
+                        .header_hide_style { 
+							display: none;
+                        }
+                        .header_style {
+							height: 35px;
+                            background-color: #009EE5;
+                            border-right: 0.5px solid #FFFFFF;
+                            color: white;
+                            font-weight: bold;
+                            text-align: center;
+                        }
+                        .filtros_style {
+							color: #094FA4;
+                            font-family: Arial, sans-serif;
+                            font-weight: bold;
+                            font-size: 13px;
+                        }
+                        .cell_style {
+							height: 35px;
+                            border-bottom: 1px solid #D9D9D9;
+                            background-color: #FFFFFF;
+                            text-align: center;
+                        }
+                        .cell_left_style {
+							height: 35px;
+                            border-bottom: 1px solid #D9D9D9;
+                            background-color: #FFFFFF;
+                            text-align: left;
+                        }
+                        .cell_warning_style {
+							height: 35px;
+                            border-bottom: 1px solid #D9D9D9;
+                            background-color: #dd7e6b;
+                            text-align: center;     
+                            color: #000000;
+                        }
+                        .cell_warning_info_style {
+							height: 35px;
+                            border-bottom: 1px solid #D9D9D9;
+                            background-color: #FFD966;
+                            text-align: center;     
+                            color: #000000;
+                        }
+                        .cell_style_justify {
+							border-bottom: 1px solid #D9D9D9;
+                            background-color: #FFFFFF;
+                            text-align:justify;
+                            white-space: pre-line;
+                        }
+                        .cell_width_200 {
+							width: 300px;
+                        }
+						.cell_width_180 {
+							width: 180px;
+                        }
+                        .cell_width_120 {
+							width: 120px;
+                        }
+                        .cell_width_100 {
+							width: 100px;
+                        }
+						.cell_width_85 {
+							width: 85px;
+                        }
+						.cell_width_75 {
+							width: 75px;
+                        }
+						.cell_width_70 {
+							width: 70px;
+                        }
+                        .cell_width_60 {
+							width: 60px;
+                        }
+                        .bold_style {
+							font-weight: bold;
+                        }
+			.row_cell_header{
+				font: 18px Tahoma, Helvetica, Arial, Sans-Serif;
+				font-weight: bolder;
+				color: white;
+				background-color: blue;
+				font-weight: bold;
+				text-align: center;
+				height: 60%
+			}
+			.row_cell_title{
+				font: 15px Tahoma, Helvetica, Arial, Sans-Serif;
+				font-weight: bold;
+				text-align: center;
+				color: white;
+				background-color: #009EE5;
+				height: 60%
+			}
+			.row_cell_content{
+				font: 13px Tahoma, Helvetica, Arial, Sans-Serif;
+				font-weight: normal;
+			text-align: center;
+				background-color: white;
+				height: 60%
+			}
