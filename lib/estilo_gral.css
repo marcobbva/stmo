@@ -106,13 +106,19 @@
 	font-weight: bold;
 }
 .divtabla-style {
-        height: 400px;
+        height: 800px;
 		width: 95%;
 		margin:0 auto;
         overflow-x: auto;
         overflow-y: auto;
 }
-
+.divtabla-style2 {
+        height: 800px;
+		width: 95%;
+		margin:0 auto;
+        overflow-x: auto;
+        overflow-y: auto;
+}
 .fht-table td {
 	vertical-align: middle;
 }
