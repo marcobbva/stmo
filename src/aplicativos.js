@@ -24,10 +24,10 @@ Array.prototype.unique = function() {
 }
 
 var column_aplicativo = 0;
-var column_finalidad = 4;
-var column_contiene = 5;
-var column_funciona = 6;
-var column_informacion = 7;
+var column_finalidad = 1;
+var column_contiene = 2;
+var column_funciona = 3;
+var column_informacion = 4;
 
 var data = [];
 
@@ -67,7 +67,7 @@ function loadDataTable() {
 	var cad = "";
 	var aplicativo, finalidad, contiene, funciona, informacion;
 
-	for (var row = 0; row < data.getNumberOfRows(); row++) {
+	for (var row = 1; row < data.getNumberOfRows(); row++) {
 
 		aplicativo = (data.getValue(row, column_aplicativo) == null) ? "" : data.getValue(row, column_aplicativo);
 		finalidad = (data.getValue(row, column_finalidad) == null) ? "" : data.getValue(row, column_finalidad);
