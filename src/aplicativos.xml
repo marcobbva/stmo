@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<Module>
+	<ModulePrefs title="aplicativos.xml" /> 
+	<Content type="html">
+		<![CDATA[	
+			<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+			<link href="https://rawgit.com/marcobbva/stmo/master/lib/bootstrap.css" rel="stylesheet">
+			<link href="https://rawgit.com/marcobbva/stmo/master/lib/fixedheadertable.css" rel="stylesheet">
+			<link href="https://rawgit.com/marcobbva/stmo/master/lib/common_styles.css" rel="stylesheet">
+			<link href="https://rawgit.com/marcobbva/stmo/master/lib/estilo_gral.css" rel="stylesheet">
+			<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+			<script src="https://rawgit.com/marcobbva/stmo/master/lib/jquery-1.10.2.min.js"></script>
+			<script src="https://rawgit.com/marcobbva/stmo/master/lib/jquery.fixedheadertable.js"></script>
+			<script src="https://rawgit.com/marcobbva/stmo/master/src/aplicativos.js"></script>
+			<div id="dashboard">
+				
+				
+				<div class="divtabla-style">
+					<table class="tabla-style" id="tabla-aplicativos" cellpadding="0" cellspacing="0">
+						<thead>
+							<tr>
+								<th width="150px" class="vcenter-row hcenter-row">Aplicativo</th>
+								<th width="230px" class="vcenter-row hcenter-row">Cu&aacutel es su finalidad?</th>
+								<th width="230px" class="vcenter-row hcenter-row">Qu&eacute contiene?</th>
+								<th width="230px" class="vcenter-row hcenter-row">C&oacutemo funciona?</th>
+								<th width="150px" class="vcenter-row hcenter-row">Qu&eacute informaci&oacuten genera?</th>
+								
+							</tr>
+						</thead>
+						<tbody>
+							
+						
+						</tbody>
+					</table>
+				</div>
+				
+			</div>
+		]]>
+	</Content> 
+</Module>
