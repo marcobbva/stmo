@@ -28,7 +28,7 @@
 						<td style="text-align:left; margin:10px 0px 0px 0px;" class="filtros_style">Tipo:</td>
 						<td id="cTipo"><input type="hidden" id="hTipo"><select id="sTipo" style="display: none;"></select></td>
 						<td></td>
-						<td height="50px" style="text-align:left;" class="filtros_style">Puto MArco:</td>
+						<td height="50px" style="text-align:left;" class="filtros_style">Concepto:</td>
 						<td><input type="text" class="input-style" id="sName"></td>
 						<td></td>
 						<td></td>
