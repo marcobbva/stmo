@@ -28,6 +28,9 @@
 						<td style="text-align:left; margin:10px 0px 0px 0px;" class="filtros_style">Tipo:</td>
 						<td id="cTipo"><input type="hidden" id="hTipo"><select id="sTipo" style="display: none;"></select></td>
 						<td></td>
+						<td height="50px" style="text-align:left;" class="filtros_style">Name:</td>
+						<td><input type="text" class="input-style" id="sName"></td>
+						<td></td>
 						<td></td>
 						<td style="text-align:right;padding-right: 5px;">
 							<a href="#" onclick="limpiar();"><img src="https://raw.githubusercontent.com/marcobbva/stmo/master/img/limpiar.png" height="40" width="40" title="Limpiar Filtros"></a>
