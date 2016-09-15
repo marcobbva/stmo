@@ -130,6 +130,17 @@ function loadSelect() {
 		}
 	});
 	
+	$("#sName").blur(function() {
+		loadDataTable();
+	});
+	$("#sName").focus(function() {
+		$(this).select();
+	});
+	$("#sName").keypress(function(event) {
+		if (event.keyCode == 13) {
+			loadDataTable();
+		}
+	});
 }
 
 function loadSelectOptions(combo, data_select) {
@@ -163,6 +174,12 @@ function loadDataTable() {
 		}
 		if (found == true && $("#sPortafolio").val() != '' && data.getValue(row, column_portafolios) != null) {
 			if (!(data.getValue(row, column_portafolios).search($("#sPortafolio").val().trim()) != -1)) {
+					found = false;
+				}
+		}
+		
+		if (found == true && $("#sName").val() != '' && data.getValue(row, column_nombre) != null) {
+			if (!(data.getValue(row, column_nombre).search($("#sName").val().trim()) != -1)) {
 					found = false;
 				}
 		}
@@ -309,5 +326,6 @@ function limpiar() {
 	$(".es-input").val('');
 	$("#sRegla").val('');
 	$("#sPortafolio").val('');
+	$("#sName").val('');
 	loadDataTable();
 }
